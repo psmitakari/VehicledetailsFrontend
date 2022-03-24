@@ -1,0 +1,83 @@
+<html>
+  <body>
+  <form #CheckeForm='ngForm' (ngSubmit)="checkEligibility(CheckeForm.value)">
+  <div class="container">
+  <h1> Vehicles Details</h1>
+  <hr>
+  <input type="text" id="cmake" name="cmake" required #cmake='ngModel'  placeholder="Car Make" 
+          minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+   <span *ngIf="cmake.invalid && cmake.touched" style="color: red;">
+          Please enter a valid input </span><br>
+
+  <input type="text" id="cmodel" name="cmodel" required #cmodel='ngModel'  placeholder="Car Model" 
+          minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+        <span *ngIf="cmodel.invalid && cmodel.touched" style="color: red;">
+          Please enter a valid input </span><br>
+       
+  <input type="number" id="showp" name="showp" required #showp='ngModel' placeholder="Showroom Price" ngModel>
+  <span *ngIf="showp.invalid && showp.touched" style="color: red;">
+          Please enter a valid input </span><br> 
+  
+  <input type="number" id="onroadp" name="onroadp" required #onroadp='ngModel' placeholder="On Road Price" Pattern="^[0-9]+$" ngModel>
+  <span *ngIf="onroadp.invalid && onroadp.touched" style="color: red;">
+          Please enter a valid input </span><br>
+   </div>  
+  
+   
+  <div class="container2">
+  <h1> Applicant Details</h1>
+  <hr>
+  <input type="text" required id="fname" #fname='ngModel' name="fname" placeholder="First Name" 
+            minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+  <span *ngIf="fname.invalid && fname.touched" style="color: red;">
+            Please enter a valid input </span><br>
+  
+  <input type="text" required id="lname" #lname='ngModel' name="lname" placeholder="Last Name" 
+            minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+  <span *ngIf="lname.invalid && lname.touched" style="color: red;">
+            Please enter a valid input </span><br>
+
+  <input type="number" id="age" name="age" required #age='ngModel' placeholder="Age" Pattern="^[0-9]+$" ngModel>
+  <span *ngIf="age.invalid && age.touched" style="color: red;">
+              Please enter a valid input </span><br>
+            
+  <select>
+          <option value=" ">--select--</option>
+          <option value="Male"> Male</option>
+          <option value="Female">Female</option> 
+  </select>
+  <br>
+
+  <input type="text" id="typeofemp" name="typeofemp" required #typeofemp='ngModel' 
+     placeholder="Type Of Employment" minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+  <span *ngIf="typeofemp.invalid && typeofemp.touched" style="color: red;">
+              Please enter a valid input </span><br>
+           
+  <input type="number" id="yearlys" name="yearlys" required #yearlys='ngModel' placeholder="Yearly Salary" Pattern="^[0-9]+$" ngModel>
+  <span *ngIf="yearlys.invalid && yearlys.touched" style="color: red;">
+     Please enter a valid input </span><br>
+
+  <input type="number" id="emi" name="emi" required #emi='ngModel' placeholder="Existing EMI" Pattern="^[0-9]+$" ngModel>
+  <span *ngIf="emi.invalid && emi.touched" style="color: red;">
+     Please enter a valid input </span><br><br> 
+  </div>
+  
+  <div class="container2">
+  <h1>Contact Details</h1>
+  <hr>
+  <input type="number" id="mob" name="mob" required #mob='ngModel' placeholder="MobileNo" pattern="[0-9]{10}" ngModel>
+  <span *ngIf="mob.invalid && mob.touched" style="color: red;">
+          Please enter a valid input </span><br> 
+
+  <input type="email" id="email" name="email" required email #email='ngModel' placeholder="Email Id" 
+                   ngModel>
+  <span *ngIf="!email.valid && email.touched" style="color: red;">
+                  Please enter a valid input </span><br>
+
+      <button [disabled]="CheckeForm.invalid" class="btn btn-primary">checkEligibility</button>
+    
+    </div>
+  </form>
+</body>
+</html>
+        

@@ -1,0 +1,49 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: white;  
+  }  
+  .container {  
+      padding: 50px;  
+    background-color: white;  
+  } 
+  .container2 {  
+    padding: 50px;  
+  background-color: white;  
+}
+    
+  input[type=text], input[type=email],input[type=number] ,select{  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0px 22px 0px;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, select:focus{  
+    background-color: skyblue;  
+    outline: none;
+  }
+ 
+
+hr {  
+    border: 2px solid #273746;  
+    margin-bottom: 25px;  
+  } 
+div {  
+    padding: 10px 0;  
+} 
+
+.chkbtn:hover {  
+    opacity: 1;  
+  }
+  .chkbtn {  
+    background-color: #273746;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;
+  }
+  

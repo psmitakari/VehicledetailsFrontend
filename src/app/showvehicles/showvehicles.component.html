@@ -1,0 +1,11 @@
+<p>showvehicles works!</p>
+<table class="table table-striped">
+    <tr><td>Vehicle ID</td><td>Vehicle Name</td><td>Type</td><td>Price</td></tr>
+    <tr *ngFor="let vh of vehicleList">
+        <td>{{ vh.vid}}</td>
+        <td>{{ vh.vname}}</td>
+        <td>{{ vh.type}}</td>
+        <td>{{ vh.price}}</td>
+
+    </tr>
+</table>

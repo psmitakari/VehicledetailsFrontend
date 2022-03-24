@@ -1,0 +1,55 @@
+<html>
+
+ <body>
+        <h1>EMI Calculator</h1>
+        <div id="container">
+        <form onsubmit=calculateEMI()>
+            <table>
+                <tr>
+                    <td>Principal Amount in Rs.</td>
+                    <td><input type="number" required 
+                    placeholder="Principal Amount" 
+                    id="principalAmount"></td>
+                </tr>
+                <tr>
+                    <td>Interest Per Annum</td>
+                    <td><input type="number" required 
+                    placeholder="Interest Per Annum"
+                    id="interestRate"></td>
+                </tr>
+                <tr>
+                    <td>Tenure in Months</td>
+                    <td><input type="number" required
+                        placeholder="Tenure in Months"
+                        id="tenure"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"> 
+                      <input type="submit" id="submit"
+                        value="Calculate">
+                      <input type="submit" id="reset"
+                      onclick="reset()" value="Clear"> </td> 
+                </tr>
+                      <div id="result"><input type="number" required
+                        placeholder="result"
+                        id="result">
+                      </div>
+                    
+            </table>
+            </form>
+            </div>
+ </body>
+</html>
+
+
+
+                      <!--<tr>
+                        <td>Result</td>
+                        <td><input type="number" required
+                          placeholder="result"
+                          id="result"></td>
+                    </tr>-->
+
+                       
+                    
+    

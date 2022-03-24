@@ -1,0 +1,92 @@
+<html>   
+<body>  
+<form #prodForm="ngForm" (ngSubmit)="saveProducts(prodForm)">  
+  <div class="container">  
+   <h1> Vehicles Details</h1> 
+  <hr>  
+  <label> Car Make </label>   
+<input type="text" name="carmake" placeholder= "Car make " size="15"
+ ngModel required minlength="3" maxlength="25" pattern="^[a-zA-Z]+$"/>   
+<label> Car Model </label>   
+<input type="text" name="carmodel" placeholder="car model " size="15" 
+ngModel required minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" />   
+<label> Ex Showroom Price: </label>    
+<input type="text" name="Exprice" placeholder="Ex price" size="15" 
+ngModel required minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" />   
+<label> On Road Price: </label>    
+<input type="text" name="onprice" placeholder="on price" size="15" 
+ngModel required minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" />
+
+<!--</div>  
+
+ <div class="container2">  
+  <h1> Applicant Details</h1> 
+  <hr>  
+  <label> Name </label>   
+<input type="text" name="Name" placeholder= "Name" size="15" 
+ required minlength="3" maxlength="50" pattern="^[a-zA-Z]+$" /> 
+<label> Age </label>    
+<input type="number" name="age" placeholder="age" size="15" min="21"  required />
+<label> Gender</label>    
+<select>
+<option value=" ">--select--</option>
+<option value="Male"> Male</option>
+<option value="Female">Female</option>
+</select>
+ <label> Type Of Employment </label>    
+<input type="text" name="Emptype" placeholder="Emptype" size="15" 
+ngModel required minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" />   
+<label> Yearly Salary </label>    
+<input type="number" name="salary" placeholder="on price" size="15" ngModel required/>
+<label> Existing EMI </label>    
+<input type="number" name="emi" placeholder="emi" size="15" ngModel required />
+ </div>  
+ <div class="container2">  
+  <h1> Contact Details</h1>  
+  <hr> 
+  <label> Mobile No </label>   
+<input type="text" name="mobileno" placeholder= "Mobile no" size="10" 
+ngModel required Pattern="^[0-9]+$" /> 
+<label> Email ID</label>    
+<input type="email" name="emailid" placeholder="email" size="15" ngModel required /> -->
+<button> <input type="submit" value="save product" [disabled]="!prodForm.valid"> </button>
+</div>
+
+</form>  
+</body>  
+</html>
+
+
+
+
+
+
+<!--<div class="from" >
+    <input type="text" name="" placeholder="vehicle details">
+    <br>
+    <input type="text" value="Car Make"><br>
+    <input type="text"  value="car Model" ><br>
+    <input type="text"  value="Showroom Price" ><br>
+    <input type="text"  value="On Road Price" ><br>
+    <hr>
+
+</div>
+<div>
+    <input type="text"  value="Application Details" ><br>
+    <input type="text"  value="Name" ><br>
+    <input type="text"  value="Age" ><br>
+    <input type="text"  value="Gender" ><br>
+    <input type="text"  value="Type Of Employment" ><br>
+    <input type="text"  value="Yearly Salary" ><br>
+    <input type="text"  value="Existing EMI" ><br>
+    <hr>
+    <div>
+        <input type="text"  value="Contact Details" ><br>
+        <input type="text"  placeholder="Mobile No"  ngModel required pattern="^[0-9]+$" ><br>
+        <input type="text"  value="Email id"><br>
+        <input type="button" value="Check Eligibility" >
+        <hr>
+    
+    </div>
+
+</div> -->

@@ -1,0 +1,33 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: white;  
+  }  
+  .container {  
+      padding: 50px;  
+    background-color: white;  
+  } 
+  .container2 {  
+      padding: 30px;  
+    background-color: white;  
+  }  
+    
+  input[type=text], input[type=password], input[type=email],input[type=number] ,select{  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0px 22px 0px;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, input[type=password]:focus ,select:focus{  
+    background-color: skyblue;  
+    outline: none;  
+  } 
+   div {  
+              padding: 10px 0;  
+       }  
+  hr {  
+    border: 2px solid #273746;  
+    margin-bottom: 25px;  
+  }  
+  

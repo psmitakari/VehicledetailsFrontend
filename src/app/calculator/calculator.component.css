@@ -1,0 +1,110 @@
+
+        #container{
+          width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+          }
+          form{
+              background-color: grey;
+          }
+          
+          table{
+              padding:20px;
+              background-color: grey ;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          td{
+              padding: 15px;
+              font-size: large;
+            }
+          h1{
+              text-align:center;
+            }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.divShell{
+    background-color: antiquewhite
+  }
+  
+  H1{
+    text-align: center
+  }
+  form{
+    border-radius: 25px;
+    background-color: thistle;
+    align-self: center;
+    color: brown
+    
+  }
+  
+  .loanBlock{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .aprBlock{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .tenureBlock{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .buttonBlock{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right:20px
+  }
+  
+  button{
+    position: relative;
+    left: 42.5%;
+    bottom: 25%;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border-radius: 30px
+  }
+  
+  #EMICapt{
+  
+    border-radius: 10px;
+    background-color:antiquewhite;
+    color: rgb(236, 17, 17);
+    padding: 20px;
+    text-align: center
+  } */

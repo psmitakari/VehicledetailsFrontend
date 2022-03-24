@@ -1,0 +1,24 @@
+<p>newvehicle works!</p>
+<form #vehicleForm="ngForm" (ngSubmit)="saveVehicle(vehicleForm)">
+    <table>
+        <tr>
+            <td>Vehicle ID</td><td> <input type="text" name="vid" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Vehicle Name</td><td> <input type="text" name="vname" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Vehicle Type</td><td> <select name="type" ngModel>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="SUV">SUV</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td>Price</td><td> <input type="number" name="price" ngModel> </td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="RESET"></td>
+            <td> <input type="submit" value="SAVE"> </td>
+        </tr>
+    </table>
